@@ -7,6 +7,8 @@ validateInputs = function(firstName, areaCode, firstThree, lastFour){
     if(!nameValidator.test(firstName)){
         if(firstName.length > 40) {
             alert("Name must be no longer than 40 characters");
+        } else if (firstName.length > 0 && (firstName.charAt(0) == firstName.charAt(0).toLowerCase())) {
+            alert("First letter of name needs to be capitalized");
         } else {
             alert("Name cannot contain special characters");
         }
