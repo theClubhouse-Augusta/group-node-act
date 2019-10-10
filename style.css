@@ -6,25 +6,34 @@ body {
 main {
   text-align: center;
 }
-h1 {
-  color: black;
-  padding: 10px;
-  margin: 10px;
+.item {
+  width: 100%;
+  letter-spacing: 6px;
   text-align: center; 
-  font-family: 'Vollkorn', serif;
-  letter-spacing: 4px;
-  background-color: white;
+  float: left;
+  background-color: #FFEECA;
   border: 5px solid black;
-  box-sizing: border-box; 
+  box-sizing: border-box;
+}
+.item1{
+width: 100%;
+letter-spacing: 6px;
+text-align: center; 
+float: left;
+background-color: #FFEECA;
+border: 5px solid black;
+box-sizing: border-box;
+}
+.item2 {  
+  width: 100%;
+  letter-spacing: 6px;
+  text-align: center; 
+  float: left;
+  background-color: #FFEECA;
+  border: 5px solid black;
+  box-sizing: border-box;
 }
 
-  p {
-    color: black;
-    border: 0px black;
-    padding: 10px;
-    margin: 10px;
-    font-family:verdana;
-  }
   footer
 {
     text-align: center;
