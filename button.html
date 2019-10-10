@@ -2,11 +2,12 @@
 <html>
     <body>
     <!-- In case you want to add a webpage -->
-            Full Name: <input id="fullname" type="text" placeholder="Full Name Here" name="firstname"><br>
+        <form action=" what ever page you want to go to/action_page.com">
+            Full Name: <input id="fullname" type="text" placeholder="Full Name Here" name="firstname"pattern="[a-zA-Z]"{1,100}><br>
             Phone#:
-            <input id="phone#1" type="tel" placeholder="Areacode Here" name="areacode" pattern="[0-9]{3}">-
-            <input id="phone#2" type="tel" name="mid" pattern="[0-9]{3}">-
-            <input id="phone#3" type="tel" name="lastfour" pattern="[0-9]{4}"><br>
+            <input id="phone#1" type="tel" placeholder="Areacode Here" name="areacode" maxlength="3" pattern="[0-9]{3}">-
+            <input id="phone#2" type="tel" name="mid" maxlength="3" pattern="[0-9]{3}">-
+            <input id="phone#3" type="tel" name="lastfour" maxlength="4" pattern="[0-9]{4}"><br>
 
             <button id="submit">Submit</button>
             <span>Format:123-456-7890</span>
