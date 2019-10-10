@@ -1,7 +1,13 @@
 body {
   background-color: white;
   text-align: center;                    
-  background-image: url("http://dianegress.com/wp-content/uploads/2014/11/simple-pattern-white-seamless-website-background-2.jpg");
+}
+div.img{
+  background-repeat: no-repeat;
+  background-image: "images.jpg";
+  width: 100%;
+  text-align:center;
+  height: auto;
 }
 main {
   text-align: center;
