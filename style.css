@@ -38,20 +38,9 @@ height: 200px;
   background-image: radial-gradient(lightblue,grey);
   border: 5px solid black;
   box-sizing: border-box;
-  height: 50px;
+  height: 300px;
+  letter-spacing: 2px;
 }
-.item3{
-    width: 100%;
-    text-align: center;
-    padding: 12px 20px;
-    margin: 8px 0;
-    box-sizing: border-box;
-    border: 1px;
-    background-image: radial-gradient(lightblue,grey);
-    color: white;
-    height: 50px;
-  }
-
   footer
 {
     text-align: center;
