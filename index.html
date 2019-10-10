@@ -1,27 +1,38 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title> <h1>Group Activity</h1> </title>
+<title> Group Activity </title>
 </head>
      <body>
             <div class="container">
                     <div class="item">Morgans Minions LLC</div>
                     <div class="item"> This is the WIP of the Clubhouse Fullstack Bootcamp</div>
                     <div class="item">Please enter your information below</div>
-                    <form>//PLACEHOLDER
-                        Full Name:<br> //PLACEHOLDER 
-                        <input type="text" name="fullName"><br>//PLACEHOLDER
-                        Phone Number<br>//PLACEHOLDER
-                        <input type="text" name="phoneNumber">//PLACEHOLDER
-                    </form>//PLACEHOLDER
+                 
                        
-                    </form> 
-                  </div>
+   <!-- In case you want to add a webpage -->
+   Full Name: <input id="fullname" type="text" placeholder="Full Name Here" name="firstname"><br>
+   Phone#:
+   <input id="phone#1" type="tel" placeholder="Areacode Here" name="areacode" maxlength="3" pattern="[0-9]{3}">-
+   <input id="phone#2" type="tel" name="mid" maxlength="3" pattern="[0-9]{3}">-
+   <input id="phone#3" type="tel" name="lastfour" maxlength="4" pattern="[0-9]{4}"><br>
+
+   <button id="submit">Submit</button>
+   <span>Format:123-456-7890</span>
+<p id="result"></p>
+<script src="input-magic.js"></script>
+
+                       
+                     
 
     </body>
 <footer>
-    <p hidden> User Input goes here 
-        
-    </p>
+    <form aria-hidden="true"> 
+<form id=nameAndNumber>
+    <input type="hidden" name="fullName"><br>   
+    <input type="hidden" name=phone#><br>
+</form>
 </footer>
+</html>
+
 </html>
