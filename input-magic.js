@@ -1,14 +1,15 @@
 //this creates input magic :)
-//var phoneNumber = document.getElementById("phone#").value;
-
+const validation = require('./validationTesting.js');
 
     document.getElementById("submit").addEventListener("click", function(){
-        var name = document.getElementById("fullname").value;
-        var firDigits = document.getElementById("phoneOne").value;
-        var secDigits = document.getElementById("phoneTwo").value;
-        var thirDigits = document.getElementById("phoneThree").value;
+        var firstName = document.getElementById("fullname").value;
+        var areaCode = document.getElementById("phoneOne").value;
+        var firstThree = document.getElementById("phoneTwo").value;
+        var lastFour = document.getElementById("phoneThree").value;
 
-        
-        document.getElementById("result").innerHTML = name;
+        if(validation.validateInputs(firstName, areaCode, firstThree, lastFour)){
+            return document.getElementById("result").innerHTML = firstName + ": " + "(" + areaCode + ") " + firstThree + "-" + lastFour;
+            return true;
+        }
     });
 
