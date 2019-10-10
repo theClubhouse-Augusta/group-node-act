@@ -3,11 +3,15 @@
     <body>
     <!-- In case you want to add a webpage -->
         <form action=" what ever page you want to go to/action_page.com">
-            Full Name: <input id="fullname" type="text" placeholder="Full Name" name="firstname" value="Enter Here"><br>
-            Phone#: <input id="phone#" type="tel" placeholder="Phonenumber" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br><br><br>
-            <input type="submit" value="Submit">
+            Full Name: <input id="fullname" type="text" placeholder="Full Name Here" name="firstname"pattern="[a-zA-Z]"{1,100}><br>
+            Phone#:
+            <input id="phone#1" type="tel" placeholder="Areacode Here" name="areacode" maxlength="3" pattern="[0-9]{3}">-
+            <input id="phone#2" type="tel" name="mid" maxlength="3" pattern="[0-9]{3}">-
+            <input id="phone#3" type="tel" name="lastfour" maxlength="4" pattern="[0-9]{4}"><br>
+
+            <button id="submit">Submit</button>
             <span>Format:123-456-7890</span>
-        </form> 
-    <p>If you click the "Submit" button, the form-data will be sent to a page called "whatever page you want to go to/action_page.php".</p>
+    <p id="result">If you click the "Submit" button, the form-data will be sent to a page called "whatever page you want to go to/action_page.php".</p>
+    <script src="input-magic.js"></script>
     </body>
 </html>
