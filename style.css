@@ -2,6 +2,9 @@ body {
   background-image: radial-gradient(black,grey);
   text-align: center;                    
 }
+h1{
+  color: azure;
+}
 .img{
   background-repeat: no-repeat;
   background-image: "images.jpeg";
